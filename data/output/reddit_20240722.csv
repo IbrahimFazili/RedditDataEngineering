@@ -1,0 +1,326 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied,total_awards_received,likes
+1e9hb4d,Marketing: Be where your users are! At conference:,,50,7,Thinker_Assignment,2024-07-22 15:36:41,https://i.redd.it/mkt9w3hoa3ed1.png,0.89,False,False,False,False,0,
+1e9czu3,Impostor syndrome,"People who moved from Data Analyst role to DE , have you ever felt impostor feeling?
+
+I will soon switch to DE and having a feel that i know nothing.
+
+Thanks",27,16,Effective_Bluebird19,2024-07-22 12:25:38,https://www.reddit.com/r/dataengineering/comments/1e9czu3/impostor_syndrome/,0.85,False,False,False,False,0,
+1e981gb,Thinking of learning another language,"I'm currently I'd say 5/10 in terms of python, and I'm starting to see it's weaknesses and strengths.
+
+As I'm starting to have a deeper understanding about the fundamentals of programming, I think it would be a good time to start looking at another language.
+
+I've been recommended GoLang (as it seems to be the best for microservices) and the Matt Holiday series on YouTube. Does anyone know of any good books or courses?
+
+I'm also happy to take any recommendations on other languages.
+ ",26,34,sillypickl,2024-07-22 07:12:49,https://www.reddit.com/r/dataengineering/comments/1e981gb/thinking_of_learning_another_language/,0.86,False,False,False,False,0,
+1e98iu7,Data Engineering Project - Tech Stack,"Hi, i am a data anlyst trying to transition into DE. What tech stack is most in demand these days. I am going to build my first DE project using the following 
+1-Apache spark for processing 
+2-Apache iceberg for lake storage
+3-MinIo as storage layer for iceberg
+4-StarRocks as DWH
+5-DBT for transformation from lake to dwh.
+
+Any advice will be helpful. ",21,8,Glass_Jellyfish_9963,2024-07-22 07:46:50,https://www.reddit.com/r/dataengineering/comments/1e98iu7/data_engineering_project_tech_stack/,0.93,False,False,False,False,0,
+1e92jf1,Kimball Modelling - Article discussing the business process of model creation,"Happy to share the [second part](https://medium.com/@nydas/kimball-star-schemas-in-data-warehousing-part-2-4ee64be25cf3?source=friends_link&sk=94919b6ef2ce92b93fd06f4b869f22a2) of my three part article mini-series on Kimball modelling. The [first article](https://medium.com/@nydas/kimball-star-schemas-in-data-warehousing-part-1-0ed765574712?source=friends_link&sk=33dcb7916ce7845e46aa986fb56902f1) looked at dimension tables, while this second article dives into the business process of creating fact tables - the glue that holds your presentation layer together.
+
+I hope this is useful to those of you starting out on your analytics engineering journey.
+
+As always, my links to this sub are paywall bypassed.",16,3,nydasco,2024-07-22 01:47:13,https://www.reddit.com/r/dataengineering/comments/1e92jf1/kimball_modelling_article_discussing_the_business/,0.91,False,False,False,False,0,
+1e97qc2,AI in data engineering,"Hi all,
+
+With the revolution of recent AI technologies I wondered if and where you have used AI in regards of data engineering projects. I am not talking only about copilots for intelligent autocomplete etc. But more sophisticated usecases. Maybe productive ones ideally. For example in some of our projects we use different AI APIs to document our python code automatically and also to migrate old environments from one SQL dialect into another (thousands of script files required automated approach), including simplifying the code during migration and testing this code. 
+
+Do you have any use cases where AI helped you working with data or data architecture?
+
+",13,12,Dear_Boysenberry_521,2024-07-22 06:52:34,https://www.reddit.com/r/dataengineering/comments/1e97qc2/ai_in_data_engineering/,0.85,False,False,False,False,0,
+1e9dze0,Data lakehouse saving $4500 per month (BigQuery -> Apache Doris),"* 3 Follower nodes, each with 20GB RAM, 12 CPU, and 200GB SSD
+* 1 Observer node with 8GB RAM, 8 CPU, and 100GB SSD
+* 3 Backend nodes, each with 64GB RAM, 32 CPU, and 3TB SSD
+
+Details about the [use case, workload, architecture, evaluation of the new system, and key lessons learned](https://doris.apache.org/blog/migrate-lakehouse-from-bigquery-to-doris/).",11,4,ApacheDoris,2024-07-22 13:13:07,https://www.reddit.com/r/dataengineering/comments/1e9dze0/data_lakehouse_saving_4500_per_month_bigquery/,0.71,False,False,False,False,0,
+1e96ee4,Are Tableau Prep flows pipelines?,"Before you hit me with the downvote, some context:
+
+>We were reviewing candidates for a Sr. DE position, and one of them explicitly stated, on both their CV and screening  call, to be extremely proficient in designing, developing, and deploying data pipelines.  
+On call, all their examples were based on Tableau Prep.. meaning they used a data connector, pulled the database either through drag and drop or a custom sql statement, then transformed it using standard steps, and published to Tablea Server. The flow was scheduled on the server as well, through UI.
+
+Now my question is, are these really Pipelines by definition? ",10,10,samjenkins377,2024-07-22 05:23:55,https://www.reddit.com/r/dataengineering/comments/1e96ee4/are_tableau_prep_flows_pipelines/,0.83,False,False,False,False,0,
+1e9ienm,"Do I ""need"" to add dlt+dbt to my Dagster+DuckDB stack?","I preface this question by saying I am a Data Scientist, leading my team, not a data engineer. But our team needs to do a lot of self-service and so we rely mostly on PySpark for doing our jobs (on EMR typically). For a very long time I have been interested in having our jobs orchestrated, with the thought that it would likely be Airflow. Suffice it to say that in recent weeks I have gone down a bit of rabbit hole and finally decided we need to make the plunge and build out our automation. I have chosen to go with Dagster over Airflow (which btw, I have used in the past for personal projects and know fairly well) and have also been playing around with DuckDB and immediately felt like it could be a game changer for our flows. So Dagster and DuckDB seems like a great combo for most of the data pipelines we run. 
+
+And this brings me to the question at hand. I have looked at dlt and dbt as tools that could potentially be added to this stack, but in either case it's not clear to me exactly what they are bringing to the table that can't be done by Dagster+DuckDB without adding extra complexity. Am I missing something? What are the use cases where dlt and or dbt are helpful, if not critical to the modern data stack? Is it more about scaling? One thought I had is that these tools would make more sense if I had to deal with many different data sources coming into our pipelines, which we do not. We are dealing almost entirely with flat files sitting on S3.  Any thoughts and or advice will be appreciated!",6,2,thecity2,2024-07-22 16:22:07,https://www.reddit.com/r/dataengineering/comments/1e9ienm/do_i_need_to_add_dltdbt_to_my_dagsterduckdb_stack/,0.81,False,False,False,False,0,
+1e9gc4u,Anyone use Synapse or ADF from Azure to move data?,"I'm working on a pipeline to transfer data from S3 to ADLS. I'm moving a variety of file types, about 200,000 files, with different sizes and different folder structures. 
+
+Synapse is great for this case and works much quicker than anything else. However I've run into the issue where any file names or folder names with special characters (!?$(){}\) cause the pipeline to break with a ""Error Code Forbidden"" and 403 Forbidden.Source System. The file permissions are correct on S3. If I rename the file without special characters they move over just fine. 
+
+Given the size of the files, I can't rename all of them. The other problem is that I want to target files that were modified before a certain date. If I rename the files the Last Modified date changes to today and I miss date in the transfer. I'm wondering if anyone has run into this issue? I've googled the problem but found no solution. Most issues with special characters are about a schema or column header. 
+
+Please advise! ",7,3,unfair_angels,2024-07-22 14:56:32,https://www.reddit.com/r/dataengineering/comments/1e9gc4u/anyone_use_synapse_or_adf_from_azure_to_move_data/,1.0,False,False,False,False,0,
+1e9d5ux,Need help designing Data warehouse,"Hello, I'm an intern and I need help designing a banking data warehouse.
+
+**(The pictures contain the OLTP DB schema (source) and the DWH schema I'm currently working on)**
+
+I'm interested in analysing transactions, loans and client behaviour that's why I'm using a galaxy schema with two fact tables: Transaction and Loan (the coloured ones) but **I'm facing trouble introducing the client & district tables to the schema**.
+
+in the source DB **clients and accounts have a many-to-many relationship** and each **client is linked to a district** which is the table I'm most interested in as it contains demographic data about where clients live which will be very beneficial to the analysis and data science parts of the project.
+
+Hope I explained the situation well, I'm looking for solutions and feedback please.
+
+https://preview.redd.it/mva35741e2ed1.png?width=750&format=png&auto=webp&s=63578d3059ec854171d380c1ae7e5a7b59f3eb6e
+
+https://preview.redd.it/y1xmpk22e2ed1.png?width=1095&format=png&auto=webp&s=bab29c11dde74c94d211b6ba70c117227896c466
+
+",6,5,Electronic_Battle876,2024-07-22 12:33:48,https://www.reddit.com/r/dataengineering/comments/1e9d5ux/need_help_designing_data_warehouse/,0.88,False,False,False,False,0,
+1e9cqm8,Trilogy - An [Experimental] Accessible SQL Semantic Layer,"Hey all - looking for feedback on an attempt to simplify SQL for some parts of data engineering, with the up-front acknowledgement that trying to replace SQL is generally a bad idea. 
+
+SQL is great. Trilogy is an open-source attempt simplify *data warehouse* SQL (reporting, analytics, dashboards, ETL, etc) by augmenting core SQL syntax with a lightweight semantic binding layer that removes the need for FROM/JOIN clause(s).
+
+It's a simple authoring framework for PK/FK definition that enables automatic traversal at query time with the ability to define reusable calculations - without requiring you to drop into a different language to modify the semantic layer, so you can iterate rapidly.
+
+Queries look like SQL, but operate on 'concepts', a reusable semantic definition that can include a calculation on other concepts. Root concepts are bound to the actual warehouse via datasource definitions which associate them with columns on tables.
+
+At query execution time, the compiler evaluates if the selected concepts can be resolved from the semantic layer by recursively sourcing all inputs of a given concept, and automatically infers any joins required and builds the relevant SQL to execute against a given backend (presto, bigquery, snowflake, etc). The query engine operating one level of abstraction up enables a lot of efficiency optimization - if you materialize a derived concept, it can be immediately referenced by a followup query without requiring recalculation, for example.
+
+The semantic layer can be imported/reused, including reusable CTEs/concept definitions, and ported across dbs or refactored to new tables by just updating the root datasource bindings.
+
+Goals are:
+
+* Decouple business logic from the storage layer in the warehouse to enable them to evolve separately - don't worry about breaking your user queries when you refactor your model
+* Simplify syntax where possible and have it encourage ""doing the right thing""
+* Maintain acceptable performance/generate reasonable SQL for a human to read
+
+[Github](https://github.com/trilogy-data/pytrilogy)
+
+Online [Demo](https://trilogydata.dev/demo/)
+
+All feedback/criticism/contributions welcome!",7,0,Prestigious_Bench_96,2024-07-22 12:12:30,https://www.reddit.com/r/dataengineering/comments/1e9cqm8/trilogy_an_experimental_accessible_sql_semantic/,0.9,False,False,False,False,0,
+1e9j9z5,Data privacy courses ,"Hi guy my agency wants us to up skill and get affordable data privacy courses. Any suggestions would be welcome. Thanks 
+
+For context: we are a resident identity management agency. ",4,4,Aymwafiq,2024-07-22 16:58:08,https://www.reddit.com/r/dataengineering/comments/1e9j9z5/data_privacy_courses/,0.76,False,False,False,False,0,
+1e97i9d,"I want to bridge excel ""models"" with SQL, is it possible?","I'm tired of excel data manipulation and want to provide a better approach to this problem. 
+
+My job uses excel models (around 20 different models), which is an excel file with ~10-15 worksheets, an input sheet and 2-5 output sheets, between them input variables populate the model that consists in sums, conditional logic between tables, ranges, constant values and different arithmetic operations. Between 100-500 input variables and around 400 output variables.
+
+The ETL process is now automated ( set input data, calculate workbook and extract output ranges) but takes some time to process 3-10 min
+
+This design tries to bring closer two groups of people, excel maintainers with no programming knowledge and a web application (my team) that through a web interface provides input variables and display output variables.
+
+Do you know of a technique that converts excel models and its relationships into SQL or another function?
+
+Do you know if low-code SQL is mature enough for this type of applications?",6,4,erlototo,2024-07-22 06:37:09,https://www.reddit.com/r/dataengineering/comments/1e97i9d/i_want_to_bridge_excel_models_with_sql_is_it/,1.0,False,False,False,False,0,
+1e9ronk,Tips to be able to get my first job as a data engineer,"Hello everyone, I am a computer science student and I have knowledge in Python, SQL, git and some cloud. I find myself reviewing Python in DataCamp and next month I start a data analysis bootcamp (it is to complement the knowledge with DE). Once I complete my Python course, I want to delve deeper into the cloud world, particularly in Azure and git focused on good practices and collaborative work. Given the context of my situation, what recommendations would you give me to be able to get started in this world and be able to find my first job or intern in this role?",1,1,InevitableScheme7168,2024-07-22 22:38:14,https://www.reddit.com/r/dataengineering/comments/1e9ronk/tips_to_be_able_to_get_my_first_job_as_a_data/,0.56,False,False,False,False,0,
+1e9jxk3,Data Engg of LLM use cases for customer data,,4,2,ephemeral404,2024-07-22 17:24:34,https://www.rudderstack.com/blog/two-prototypes-using-llms-with-customer-data/,0.7,False,False,False,False,0,
+1e9qw4z,Junior Data Engineer Looking for a Mentor ,"Hi all,
+
+I'm a data analyst with ambitions to transition into an Azure Data Engineer role. Currently, I'm deep into studying for the PL300 exam and I would love to offer my assistance on projects at no cost in exchange for valuable insights and knowledge-sharing opportunities. 
+
+Please reach out if you would like some help on your work :) ",4,4,Adventurous-Ask-1474,2024-07-22 22:04:50,https://www.reddit.com/r/dataengineering/comments/1e9qw4z/junior_data_engineer_looking_for_a_mentor/,0.83,False,False,False,False,0,
+1e9ky4y,To Tribal Knowledge or not to Tribal Knowledge.,"I have a conundrum with how knowledge in DE teams works. I've been working in Data Engineering for almost 2 years now and I don't think I will ever get the full understanding of what I like to call ""the pipeline multiverse"". 
+
+Okay, so most people always talk about ETL or ELT or some combination of those two. But normally enterprise code pipelines feel more like EEEETTTTLLLL and mostly overcomplicated legacy code in a bunch of cases, not saying that is bad (because we are not going to refactor everything) but it always tends to boil down to ""guess who possesses the tribal knowledge for creating a good enough solution under the pipeline construction creation"".
+
+My question would be, in those cases do we just accept tribal knowledge is acceptable and inheriting a project will always come at a cost, or we should think about avoiding keeping knowledge to ourselves and if so, how would be good solutions for it?",5,4,Technical-Rip9688,2024-07-22 18:05:26,https://www.reddit.com/r/dataengineering/comments/1e9ky4y/to_tribal_knowledge_or_not_to_tribal_knowledge/,0.78,False,False,False,False,0,
+1e9huvf,Is it possible to run dbt (core) on Azure functions? ,Has anyone tried to run dbt core on Azure Functions?.  Could you share your experience. ,3,3,SignificanceNo136,2024-07-22 15:59:29,https://www.reddit.com/r/dataengineering/comments/1e9huvf/is_it_possible_to_run_dbt_core_on_azure_functions/,0.72,False,False,False,False,0,
+1e9dp1h,Accessing Snapshots of an Iceberg table stored in S3,"I know one can use the below query to get snapshots of an Iceberg table
+
+spark.sql(SELECT * FROM db.table1.snapshots)
+
+But what if the table is accessible only via an S3 path? How do I get snapshots in this case?
+
+spark.read.format(iceberg).load(S3path)
+
+ChatGPT given answer (see below) did not work. 
+
+spark.sql(select * from history(s3path))",3,2,crazybOzO,2024-07-22 13:00:01,https://www.reddit.com/r/dataengineering/comments/1e9dp1h/accessing_snapshots_of_an_iceberg_table_stored_in/,0.72,False,False,False,False,0,
+1e9bjls,DBT + AWS Glue (Spark SQL)... How it works ?,"My team is in process of refactor Data Platform. Bunch of .json files land on RAW S3 bucket. Those data is exploded from document format to table format and converted to .parqet. Later there are created few denormalized tables with bunch of joins etc. (I know it is wrong... but this is requirement. I tried to tell them it should be done in Data Werehouse...)
+
+Tech stack is - AWS Glue + Spark Dataframes + MWAA (Airflow). 
+
+I don't like:
+
+- Spark Dataframes - prefer SQL -> is easier to understand for simple transofrmations
+
+- How data should be transformed (in what order) is stored in DAG. When you read just Glue python scripts there is no indication... Maybe Step functions or MWAA + DBT + Cosmos by Astonomer.
+
+Business requirement is that data will be processed in near real time. Spark and Glue seems to be great but it is a pain to model that and take care of logic and downstream dependencies of what order data should be transformed to Airflow. I have found that -> [https://aws.amazon.com/blogs/big-data/build-and-manage-your-modern-data-stack-using-dbt-and-aws-glue-through-dbt-glue-the-new-trusted-dbt-adapter/](https://aws.amazon.com/blogs/big-data/build-and-manage-your-modern-data-stack-using-dbt-and-aws-glue-through-dbt-glue-the-new-trusted-dbt-adapter/) DBT adapter for AWS Glue. I am wondering if it is possible or someone did it to set up Spark Structured Streaming in DBT + AWS Glue. 
+
+This solution would solve all our problems
+
+- easy to read and understand: SQL
+
+- scalable SPARK + Glue
+
+- Fast: Streaming
+
+- easy no manage dependencies: DBT
+
+Maybe there is some other tool like DBT for Data Warehousing but for Spark ???
+
+I am not sure in which direction should we go...",3,4,Deep-Shape-323,2024-07-22 11:07:42,https://www.reddit.com/r/dataengineering/comments/1e9bjls/dbt_aws_glue_spark_sql_how_it_works/,0.72,False,False,False,False,0,
+1e97o71, Best practices for handling replicated data from RDS to Redshift  for DBT workflows,"Hello,   
+I'm currently working in a new project which uses Redshift as a DWH., and there is a DMS in the background that is replicating data from MySQL RDS to Redshift. 
+
+I have a task to introduce DBT technology for Transformations on Redshift. And I have some questions/concerns.  
+  
+When replicating data from RDS to Redshift, I'm wondering about the best approach to handle this data in my dbt workflow. I'm considering two options and would appreciate your insights:
+
+Treat replicated tables as raw/untouchable source data:
+
+* Keep the replicated data unchanged
+* Run DBT workflows which basically are coping (maybe some little changes) these tables to new tables in my target ""dbt"" schema - and at this stage add dist keys, sortkeys to copied table. Let's call it my staging layer - but with table materializations
+* Create next layers based on these tables: intermediate/marts etc
+
+Modify the raw replicated tables:
+
+* Add distkey and sortkey directly to the raw replicated tables in Redshift
+*  Still use dbt for further transformations and modeling, but in these casse treat ""replicated tables"" as my source data that is already prepared,and  modified for  staging layer.
+
+So in the end I wonder if it's okey to touch replicated tables and build on top of them, or better to leave them untouched and just copy them in proper form into new base layer for my dbt workflows.
+
+Which approach is generally considered best practice? Are there scenarios where one might be preferred over the other?
+
+Additionally, if I go with the second approach, how can I automate the process of adding or updating distkey and sortkey for newly replicated tables in Redshift?
+
+I'd appreciate any advice, especially from those who have experience with similar setups. Thanks in advance!",3,2,Purple_Wrap9596,2024-07-22 06:48:30,https://www.reddit.com/r/dataengineering/comments/1e97o71/best_practices_for_handling_replicated_data_from/,0.81,False,False,False,False,0,
+1e9rb78,How would you architect and/or orchestrate this with Airflow/Cloud Composer?,"**Current State:**
+
+Several buckets in GCS are mirrored to SFTP servers that partners/vendors/clients drop files into.  Each new file drop kicks off a cloud function that checks against a list of ""configs"" and loads the data raw into big query.  This system has been humming along for about a year with no issue.
+
+A config looks something like this:
+
+    GenericDatafile(
+        datafile_name=""CandidateV1"",
+        report_name=ReportNames.CANDIDATE,
+        file_match_regex=r""Candidate \(C3\)_\d\d\d\d\d\d\d\d\.csv"",
+        destination_dataset=""raw_candidate_reports"",
+        destination_table=""candidate_v1"",
+        file_ext=""csv"",
+        delimiter="","",
+        datamodel=CandidateModelV1,
+        uuid_enrichment=True,
+        skip_top_rows=0,
+        skip_bottom_rows=0,
+        custom_parser=None,
+    )
+
+We have a series of DBT jobs and downstream processes that run off of the DBT'd data.  Right now they are all run via crons.  
+
+We knew this wasn't the ideal solution, but given bandwidth and implementation timelines for the downstream processes, this is what we did.
+
+**Problems:**
+
+1) As we add new partners, crons are not going to cut it for management of DBT runs and additional downstream processes
+
+2) Observability and monitoring is fractured across many systems
+
+3) We run on DBT cloud now and we'd like to move away from it for various reasons
+
+4) We are expanding the scope of the downstream processes and certain files need to trigger certain DBT runs and also certain downstream processes (generally other cloud functions or API calls)
+
+**Proposed Solution(s):**
+
+We're planning to move to GCP's managed Airflow, Cloud Composer.  
+
+1) Keep config-based extract/load system outside of Airflow and add an attribute to the config like \`run\_dag\` that would kick off a given DAG via the Airflow REST API
+
+2) Move config-based extract/load system into Airflow
+
+**Concerns/Problems:**
+
+I have a slight preference for option 2 here for observability and monitoring reasons.  Generally, when our systems fail it is because partners/vendors/clients send bad data that does not conform to the agreed upon spec (column name changes, column reordering, unexpected values for very strict enum type cols, etc.).  Depending on the category of data error things can fail and the extract/load step, dbt steps or down stream process steps.  For this reason, I think it would be great if \_everything\_ was run in airflow for isolating and triaging failures.
+
+My issue with option 2 is the following (and maybe this isn't even a valid issue! i'm quite new to airflow):  As I have been spiking this, I can't figure out an elegant way to trigger certain DAGs, based on a regex match against a new file that was uploaded.  
+
+Right now, in my prototype I have a cloud function that runs whenever a file is uploaded to the bucket it is listening to and kicks off a DAG in airflow by refrencing the \`dag\_id\` -- it passes along the location of the file in the payload.  
+
+In actuality we have about 10 buckets with 50 different files spread amonst them.  I'm not super keen on the idea of all files passing through one central ""starter"" dag and then using that dag to kick off other dags, buy maybe this is the way?  
+
+My ideal scenario is all upload/dbt/downstream DAGS have their own isolated graph, but I have not come up with a good implementation for this while keeping everything in Airflow.
+
+This is why option 1 is attractive (although not my preference for the observability reasons), because it's quite easy to attach an isolated dag to a config and have that get triggered.
+
+Anyways! I would really appreciate any guidance on how to achieve my goals with option 2. In summary, you can imagine \~50 different files spread across 10 or so buckets, that need to trigger a specific set of steps based on a regex match for what the file is and I would love if each DAG is isolated from the others, instead of having everything be birthed from one ""starter"" DAG that would get kicked off whenever any inbound file triggers it.",3,1,__dog_man__,2024-07-22 22:22:23,https://www.reddit.com/r/dataengineering/comments/1e9rb78/how_would_you_architect_andor_orchestrate_this/,1.0,False,False,False,False,0,
+1e9jfhf,Line of Business Use Cases for Data Lakehouse,"Those of you who have adopted a data lakehouse architecture, how did you justify the need for it in terms of solving business issues- not tech issues? In other words, what use cases are you solving for the business/stakeholders by adopting a solution like Databricks or Big Query? I get these products from a technical perspective. Im interested to hear how you translated all these shiny features into something that drove your company forward (ie, reduced risk, revenue growth, reduced costs, better customer acquisition, higher customer conversion etc) thx! 
+",2,1,markaaronfox,2024-07-22 17:03:59,https://www.reddit.com/r/dataengineering/comments/1e9jfhf/line_of_business_use_cases_for_data_lakehouse/,0.67,False,False,False,False,0,
+1e9s9g1,You don't need Snowflake ❄ ,"Our co-founder posted on LinkedIn about Snowflake and it raised some questions:
+
+How do you evaluate what you need in a data warehouse?
+
+What features are most important to you?
+
+What type of organization do you think Snowflake is the right fit for?
+
+[https://www.linkedin.com/posts/noelgomez\_datawarehouse-snowflake-activity-72194844133\[…\]tm\_content=feedcontent&utm\_medium=g\_dt\_web&utm\_campaign=copy](https://www.linkedin.com/posts/noelgomez_datawarehouse-snowflake-activity-7219484413347127296-szYJ?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy)
+
+After helping many customers modernize their data stack,  Snowflake has become our DW of choice due to its simplicity in setting up and administering, but it may not be right for your organization.
+
+**Here are some things we think should be considered:**
+
+1️. How much data do you have?  Are you moving from a Google Sheets / Excel based process and you don't have that much data?
+
+You might be fine with a simpler / less expensive option like DuckDB
+
+2️. Can your company benefit from a data marketplace?
+
+The Snowflake data marketplace is great for getting free and paid datasets, but if your need is just to use your own data, then this is not going to be of value.
+
+3. Do you need to protect data for different types of users?
+
+If your data is not that sensitive, they you will not get value from the robust Snowflake RBAC model where you can store all your data in one place while providing different levels of access to different types of users.
+
+4️. Do you need to share data with partners?
+
+If you don't need to share data with the simplicity you share a file on Google Drive / One Drive, then you may now need Snowflake.
+
+5️. Do you like tinkering and tweaking things?
+
+If you prefer to have all the knobs to tweak to your heart's content, then Snowflake may not be right for you. Snowflake prioritizes user experience which means you will not be able to tweak as many things as you can on other platforms. This is fine, to each their own 😁
+
+If Snowflake is not right for you here are some Open Source database recommendations: [https://datacoves.com/post/open-source-databases](https://datacoves.com/post/open-source-databases)",2,2,Data-Queen-Mayra,2024-07-22 23:02:57,https://www.reddit.com/r/dataengineering/comments/1e9s9g1/you_dont_need_snowflake/,0.6,False,False,False,False,0,
+1e9s8b6,"First ""DE"" project","Hello all, 
+
+Here's my first ""DE"" project: This basically collects data from a bunch of APIs and loads it in GCP BQ, a cornjob does this. Now, I'm planning to build a streamlit app and deploy it on GCP, to visualize the data (I know nothing about this though). So, I have 2 requests from this sub, 
+
+1. Please take a look at the code, any criticism is appreciated. I know there'll be a lot of shitty code. Here's the [GitHub](https://github.com/nitheeshkoushik/franchiseCric) repo.
+2. Please point me in the right direction, to build and deploy the streamlit app
+
+Thanks in advance! ",1,1,theotherlostsock,2024-07-22 23:01:39,https://www.reddit.com/r/dataengineering/comments/1e9s8b6/first_de_project/,1.0,False,False,False,False,0,
+1e9rvpw,"Out-of-the-box text processing: Entity extraction, resolution, and entity match scoring",,2,0,Different-General700,2024-07-22 22:46:42,https://v.redd.it/g9393o4ff5ed1,1.0,False,False,False,False,0,
+1e9rjum,Migrating from Snowflake to Databricks using dbt?,"Guys, wish me luck... And any tips please? 🫣",4,0,MakitaNakamoto,2024-07-22 22:32:30,https://i.redd.it/oiu92d21d5ed1.jpeg,0.83,False,False,False,False,0,
+1e9p3b4,Choosing a Cloud-Agnostic Metadata Store with Cross-Platform Querying,"
+Hi everyone,
+
+I'm researching metadata stores that can work seamlessly across multiple cloud providers (GCP, AWS, Azure) and data platforms (Snowflake, Databricks).
+
+My key requirements are:
+
+Broad Compatibility: I need a store that can catalog metadata from a wide range of sources, including data warehouses, data lakes, and even streaming platforms.
+Cross-Platform Querying: The ability to query the metadata store directly from various platforms is essential. Ideally, I'd like to be able to run queries from Snowflake, Databricks, etc., without needing to move the metadata around.
+API-Driven: A robust API is important for integration with other tools in my data ecosystem.
+Example Use Case:
+
+Let's say I have some data in BigQuery (GCP) and some in Snowflake. I'd like to be able to:
+
+Store metadata about both datasets in the same metadata store.
+Run a query from Snowflake that analyzes metadata about both the Snowflake and BigQuery data.
+Do the same from BigQuery, querying metadata about both sources.
+Has anyone had experience with a metadata store that meets these criteria? Any recommendations or insights would be greatly appreciated!",2,0,SeaworthinessDue8121,2024-07-22 20:51:40,https://www.reddit.com/r/dataengineering/comments/1e9p3b4/choosing_a_cloudagnostic_metadata_store_with/,0.76,False,False,False,False,0,
+1e9klzp,How does AWS Glue distribute workloads across DPUs?,"I'm currently working on an AWS Glue job that loads data from a legacy relational database into Amazon Redshift. I'm trying to understand how AWS Glue distributes its workloads across Data Processing Units (DPUs).
+
+My specific questions are:
+
+1. Does AWS Glue automatically handle the distribution of workloads across DPUs, or is there any configuration required on my part?
+2. Are there any best practices or tips for optimizing the use of DPUs in Glue jobs?
+
+Any insights or resources you can share would be greatly appreciated. Thanks in advance!",2,1,naruto_believe12,2024-07-22 17:51:53,https://www.reddit.com/r/dataengineering/comments/1e9klzp/how_does_aws_glue_distribute_workloads_across_dpus/,0.67,False,False,False,False,0,
+1e9q0k9,"What does ""Metadata Management"" Mean to you?","We hear the term ""Metadata Management"" used a lot but there are a lot of types of metadata.
+
+\- User facing data about datasets (think data catalogs like colibra and alation)
+
+\- metadata of datasets used to optimize queries at the engine level (Think Iceberg, Delta Lake, Hudi)
+
+etc.  
+
+
+When you think Metadata Management is one of the most important challenges, what do you think of it as?
+
+[View Poll](https://www.reddit.com/poll/1e9q0k9)",0,0,AMDataLake,2024-07-22 21:28:48,https://www.reddit.com/r/dataengineering/comments/1e9q0k9/what_does_metadata_management_mean_to_you/,0.5,False,False,False,False,0,
+1e99wsp,11 DataBricks Tricks That Will Blow Your Mind,,0,0,codingdecently,2024-07-22 09:24:05,https://overcast.blog/11-databricks-tricks-that-will-blow-your-mind-411226e1ac5b,0.27,False,False,False,False,0,
