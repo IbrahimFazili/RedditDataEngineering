@@ -1,0 +1,38 @@
+[2024-07-24T00:00:04.263+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T00:00:04.299+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T00:00:04.308+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T00:00:04.308+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-24T00:00:04.320+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-07-23 00:00:00+00:00
+[2024-07-24T00:00:04.328+0000] {standard_task_runner.py:64} INFO - Started process 82 to run task
+[2024-07-24T00:00:04.330+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'reddit_extraction', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmpf8cu09m4']
+[2024-07-24T00:00:04.333+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask reddit_extraction
+[2024-07-24T00:00:04.377+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [running]> on host 7e89e30cc188
+[2024-07-24T00:00:04.464+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ibrahim Fazili' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T00:00:04.466+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T00:00:04.773+0000] {logging_mixin.py:188} INFO - Connected to Reddit!
+[2024-07-24T00:00:05.416+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-24T00:00:05.417+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T00:00:05.427+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=reddit_extraction, run_id=scheduled__2024-07-23T00:00:00+00:00, execution_date=20240723T000000, start_date=20240724T000004, end_date=20240724T000005
+[2024-07-24T00:00:05.472+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T00:00:05.488+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T00:00:05.490+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T03:32:12.113+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509
+[2024-07-24T03:32:12.114+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction'
+[2024-07-24T03:32:12.145+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509
+[2024-07-24T03:32:12.145+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction'
+[2024-07-24T03:32:12.186+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T03:32:12.194+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T03:32:12.195+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-07-24T03:32:12.207+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-07-23 00:00:00+00:00
+[2024-07-24T03:32:12.217+0000] {standard_task_runner.py:57} INFO - Started process 58 to run task
+[2024-07-24T03:32:12.229+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'reddit_extraction', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmpzpr8qtw7']
+[2024-07-24T03:32:12.241+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask reddit_extraction
+[2024-07-24T03:32:12.364+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509
+[2024-07-24T03:32:12.364+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=reddit_extraction'
+[2024-07-24T03:32:12.367+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.reddit_extraction scheduled__2024-07-23T00:00:00+00:00 [running]> on host a3b014fcf0aa
+[2024-07-24T03:32:12.483+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ibrahim Fazili' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T03:32:12.652+0000] {logging_mixin.py:151} INFO - Connected to Reddit!
+[2024-07-24T03:32:13.237+0000] {python.py:194} INFO - Done. Returned value was: /opt/airflow/data/output/reddit_20240724.csv
+[2024-07-24T03:32:13.292+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=reddit_extraction, execution_date=20240723T000000, start_date=20240724T033212, end_date=20240724T033213
+[2024-07-24T03:32:13.325+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-07-24T03:32:13.345+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

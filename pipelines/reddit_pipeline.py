@@ -14,5 +14,9 @@ def reddit_pipeline(file_name: str, subreddit: str, time_filter='day', limit=Non
     post_df_transformed = transform_data(post_df)
 
     file_path = f'{OUTPUT_PATH}/{file_name}.csv'
+    
     # loading to csv
     load_data_to_csv(post_df_transformed, file_path)
+
+    # important because this will be passed into the next pipeline
+    return file_path 

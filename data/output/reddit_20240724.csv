@@ -1,0 +1,286 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied,total_awards_received,likes
+1e9zo7h,Sweat equity,Who needs a salary anyways?,165,33,Sebros9977,2024-07-23 05:13:54,https://i.redd.it/dvub283nc7ed1.jpeg,0,False,False,False,False,0,
+1ea6xtx,Best Open Source Data Engineering Tools Built in Python?,"Hi all,
+
+Looking at starting to contribute to some open source projects in some upcoming free time, but seeing as I am a humble data engineer, I’m only proficient in Python/SQL. Is there any source that has a list of open source data engineering tools built mainly in python? I know that some popular tools like Dagster/SQLmesh/dbt etc are built mainly in python, but wondering if there’s a more robust list anywhere. Or, if anyone has any suggestions for specific projects to contribute to, that would be appreciated too! ",60,15,Butterhero_,2024-07-23 12:46:08,https://www.reddit.com/r/dataengineering/comments/1ea6xtx/best_open_source_data_engineering_tools_built_in/,0,False,False,False,False,0,
+1eafdqt,"In general, is the Databricks good choice when the data is not big?","This question is kind of more general and not for particular use case. I previously thought that Databricks platform was usually used for big data. I recently was told that Databricks is also good choice when data is small. What is your opinion, is Databricks also good choice if what I need to use it for does not involve much data, like 100mb-1gb?",39,57,Alex_df_300,2024-07-23 18:37:06,https://www.reddit.com/r/dataengineering/comments/1eafdqt/in_general_is_the_databricks_good_choice_when_the/,0,False,False,False,False,0,
+1eaojmw,Netflix just open sourced their orchestrator Maestro,Here is their github repo as well: https://github.com/Netflix/maestro,42,4,on_the_mark_data,2024-07-24 01:02:23,https://netflixtechblog.com/maestro-netflixs-workflow-orchestrator-ee13a06f9c78,0,False,False,False,False,0,
+1eajbke,How fast data engineering is moving forward?,There are some IT specialties in which current frameworks/libraries/services are become old quite fast. What about data engineering?  How fast frameworks/libraries/services in data engineering are becoming outdated?,31,14,Alex_df_300,2024-07-23 21:14:46,https://www.reddit.com/r/dataengineering/comments/1eajbke/how_fast_data_engineering_is_moving_forward/,0,False,False,False,False,0,
+1ea37sc,Which data warehouse solution to use in Microsoft Azure,"As the title says I'm confused to which data warehouse I should use within the Azure environment.
+
+So, I'm doing this data engineering summer internship where I'm working within Microsoft Azure environment, I ingest data from azure blob storage as CSV files, process and clean them within data bricks and now I have to load them into a separate data warehouse to be linked with BI tools later. 
+
+I have no idea which tool to use, thought about provisioning a simple Relational database like PostgreSQL or MySQL but don't know if that's a good choice.
+
+Data is not that big, it's partitioned into files that each represent a table in the production database, so loading them in a relational database won't be an issue and I already prepared a schema for a relational warehouse with fact tables and dimensions.",13,15,Electronic_Battle876,2024-07-23 09:07:27,https://www.reddit.com/r/dataengineering/comments/1ea37sc/which_data_warehouse_solution_to_use_in_microsoft/,0,False,False,False,False,0,
+1ea15r8,Synthetic Test Data.,"Hey ho D'engers. 
+
+So I went to a Google cloud 2 customer event a few months ago where they demonstrated creating synthetic test data with Gemini. I've done some digging since but can't really find much outside of paid for services. 
+
+As we're about to lose access to production data for Dev I was wondering how you guys generate test data? 
+",14,6,tcfcfc,2024-07-23 06:50:06,https://www.reddit.com/r/dataengineering/comments/1ea15r8/synthetic_test_data/,1,False,False,False,False,0,
+1ea3m0t,Best practices and process to Audit the data in Data engineering project,Hi hope everyone doing good... I need a suggestion In my current project the data is getting lost when the data is getting moved between different layer. How can I implement a audit process to track the data between two layer if I take the record count between each layer that should be fine. Please provide your suggestions on it.,7,3,RK0235,2024-07-23 09:34:18,https://www.reddit.com/r/dataengineering/comments/1ea3m0t/best_practices_and_process_to_audit_the_data_in/,0,False,False,False,False,0,
+1eaa9fo,Handling Out-of-Order Event Streams in Data Engineering: Ensuring Accurate Data Processing and Calculating Time Deltas,"Imagine you’re eagerly waiting for your Uber, Ola, or Lyft to arrive. You see the driver’s car icon moving on the app’s map, approaching your location. Suddenly, the icon jumps back a few streets before continuing on the correct path. This confusing movement happens because of out-of-order data.
+
+In ride-hailing or similar IoT systems, cars send their location updates continuously to keep everyone informed. Ideally, these updates should arrive in the order they were sent. However, sometimes things go wrong. For instance, a location update showing the driver at point Y might reach the app before an earlier update showing the driver at point X. This mix-up in order causes the app to show incorrect information briefly, making it seem like the driver is moving in a strange way. This can further cause several problems like wrong location display, unreliable ETA of cab arrival, bad route suggestions, etc.
+
+**How can you address out-of-order data in data engineering?**
+
+There are various ways to address this, such as:
+
+* **Timestamps and Watermarks**: Adding timestamps to each location update and using watermarks to reorder them correctly before processing.
+* **Bitemporal Modeling**: This technique tracks an event along two timelines—when it occurred and when it was recorded in the database. This allows you to identify and correct any delays in data recording.
+* **Support for Data Backfilling**: Your ETL pipeline should support corrections to past data entries, ensuring that you can update the database with the most accurate information even after the initial recording.
+* **Smart Data Processing Logic**: Employ machine learning to process and correct data in real-time as it streams into your data engineering system, ensuring that any anomalies or out-of-order data are addressed immediately.
+
+**Resource: Hands-on Tutorial on Managing Out-of-Order Data**
+
+In this resource, you will explore a powerful and straightforward method to handle out-of-order events using Pathway. Pathway, with its unified real-time data processing engine and support for these advanced features, can help you build a robust data engineering pipeline that flags or even corrects out-of-order data before it causes problems. [https://pathway.com/developers/templates/event\_stream\_processing\_time\_between\_occurrences](https://pathway.com/developers/templates/event_stream_processing_time_between_occurrences)
+
+**Steps Overview:**
+
+1. **Synchronize Input Data**: Use Debezium, a tool that captures changes from a database and streams them into your data engineering pipeline via Kafka/Pathway.
+2. **Reorder Events**: Use Pathway to sort events based on their timestamps for each topic. A topic is a category or feed name to which records are stored and published in systems like Kafka.
+3. **Calculate Time Differences**: Determine the time elapsed between consecutive events of the same topic to gain insights into event patterns.
+4. **Store Results**: Save the processed data to a PostgreSQL database using Pathway.
+
+This will help you sort events and calculate the time differences between consecutive events. This helps in accurately sequencing events and understanding the time elapsed between them, which can be crucial for various data engineering applications.
+
+Credits: Referred to resources by Przemyslaw Uznanski and Adrian Kosowski from Pathway, and Hubert Dulay (StarTree) and Ralph Debusmann (Migros), co-authors of the O’Reilly Streaming Databases 2024 book.
+
+Hope this helps!",8,3,Typical-Scene-5794,2024-07-23 15:11:21,https://www.reddit.com/r/dataengineering/comments/1eaa9fo/handling_outoforder_event_streams_in_data/,0,False,False,False,False,0,
+1eahzp9,"In your opinion, Which data transformation tools are the best at each data size? ","I'm curious if there is absolute concensus at each level. To standardize scale I'll say: 
+
+Tier 1: 0 - 100 MBs 
+Tier 2: 100 MBs - 1GB 
+Tier 3: 1 GB - 100 GBs 
+Tier 4: 100 GBs - 1TB 
+Tier 5: 1TB - Onwards 
+
+I'll start by saying that for T1 Excel / Sheets is King",7,13,Bavender-Lrown,2024-07-23 20:21:10,https://www.reddit.com/r/dataengineering/comments/1eahzp9/in_your_opinion_which_data_transformation_tools/,0,False,False,False,False,0,
+1eab7gh,Local testing strategy for Spark based ETL jobs?,"Recently, I have been assigned to develop some sort of strategy to improve local testing of Spark ETL jobs in our organisation. So currently, we write test cases in individual Spark repositories and similarly put the input dataset CSV files in the test resources folder. 
+
+I am thinking of the following - 
+
+* I am thinking of centralising the datasets and schema in a single repo and use it as a lib dependency in the ETL jobs (test scope ofc)
+* The lib will return a local spark session that will create all the passed input table names
+* In this way, duplicity and different cases created by developers for the same table will reduce down
+
+Let me know your thoughts on this. And if you have already have a system (in your org)/idea, please feel free to add in the comments as well.",6,7,the_iconik,2024-07-23 15:48:21,https://www.reddit.com/r/dataengineering/comments/1eab7gh/local_testing_strategy_for_spark_based_etl_jobs/,0,False,False,False,False,0,
+1ea427p,How can I get python scripts from company git server and run using apache nifi,"I have an idea of automating process using python and nifi. Here it is. I have maintainer role in company hosted git server and also nifi is hosted on another server.  I want to build an automated running process of python scripts. But, these python scripts are needed to change occasionally. So, instead of saving python file in PC, I want nifi to get directly from the git server and run them. It is possible or not and how can I achieve this if possible?",6,2,UnfairTelevision494,2024-07-23 10:03:41,https://www.reddit.com/r/dataengineering/comments/1ea427p/how_can_i_get_python_scripts_from_company_git/,0,False,False,False,False,0,
+1ea1ick,Feedback on my new GCP project ,"Hello Everyone, I am currently working on a project where I have to automate a VBA process that uses complex transformation logic to create output in Excel. VBA is not able to process all the input data. VBA process takes around 12 mins to process one excel file. Each xls has around 35 sheets with custom formulae and formats in each sheet. Part of the data goes missing in the final output. And, business foresee a need to process large sets of files simultaneously. The current input and output are in Excel. My task is to convert the VBA logic to Python and store the output in BigQuery. This data is then sent to a vendor via API, and we will receive the vendor’s output. Using the original input files and the vendor’s output, I will perform further transformations to arrive at the final output tables and queries.
+
+The plan is to keep it simple by utilizing a combination of Bash script, Python, GCS, Compute Engine, and BigQuery. The input/output volume is not huge, but the transformations are complex with lots of custom formulas.
+
+From a data engineering perspective, will this project add value to my work experience? My Director is open to trying new tools/services within GCP, but I don’t think it is necessary. I would appreciate your feedback on the value of this project as a data engineer and any points to improve it.",5,5,Elegant_Stable,2024-07-23 07:13:01,https://www.reddit.com/r/dataengineering/comments/1ea1ick/feedback_on_my_new_gcp_project/,0,False,False,False,False,0,
+1ea807s,Recommendations for Triplestores,"I'm working on a project where we want to store some metadata information as a Knowledge Graph in a Triplestore. I'm considering some options like Virtuoso, Anzograph, and Neo4js. Still, I wanted to know which Triple Store has worked best in your experience and some of the challenges of implementing a triplestore.",4,2,No_Bid2289,2024-07-23 13:35:20,https://www.reddit.com/r/dataengineering/comments/1ea807s/recommendations_for_triplestores/,0,False,False,False,False,0,
+1eapfck,I'm not a Data Engineer. Please help me decide on tools to use to build a simple data pipeline.,"I'm a Data Scientist that has just joined a small project after mostly working for pretty big companies in the past. I've been brought in to oversee everything data related for a small start-up that wants me to build an ML model using user data from their website. I need to build a simple pipeline to query data from our MySQL server, then run my python files for processing the data and training a model. I'm used to having a data engineer on my team to provide me with data and then using Databricks to add my steps for modelling. Now that I'm tasked with creating a pipeline from scratch with no budget I'm a little overwhelmed by all the tools out there. Doing a little research has led me to consider using Prefect or Dagster. I'm inclined to go for Prefect as it seems simpler to get started with but I don't want to simply use a worse tool due to just wanting less work for myself. My manager wants me to host the pipeline and model in a cPanel server that the company is already paying for in order to save money. Does anyone have any advice for tools I should consider for building a pipeline for this use-case? ",8,3,RastaSalad,2024-07-24 01:46:13,https://www.reddit.com/r/dataengineering/comments/1eapfck/im_not_a_data_engineer_please_help_me_decide_on/,1,False,False,False,False,0,
+1eabydf,Help with Informatica (IICS),"Hey guys, I just started a new job as a data analyst found out I will be using a lot of Informatica. I don’t have very much experience within ETL much less Informatica so was just wondering if anyone has any advice or training materials that would help. ",3,1,LeatherNebula4920,2024-07-23 16:18:36,https://www.reddit.com/r/dataengineering/comments/1eabydf/help_with_informatica_iics/,0,False,False,False,False,0,
+1ea44kz,Semantics and Data Product Enablement - A Practitioner's Secret,,3,0,growth_man,2024-07-23 10:07:50,https://moderndata101.substack.com/p/semantics-and-data-product-enablement,0,False,False,False,False,0,
+1e9yw2z,Other Job Titles for Entry Level / Junior Data Engineer?,"Hello all!
+
+Right now, I am pursuing a master's in data science, and I am interested in data engineering (DE). I have learned from many discussions in this community that there aren't a lot of entry-level DE jobs. What job titles should I search for when looking for positions that involve similar tasks to DE?
+
+My main concern is that I want to create a portfolio project that showcases my data engineering skills, and I don't want to change it to fit other roles, such as data analyst.
+
+  
+Thank you!!",3,7,just_a_ladyboi,2024-07-23 04:26:24,https://www.reddit.com/r/dataengineering/comments/1e9yw2z/other_job_titles_for_entry_level_junior_data/,0,False,False,False,False,0,
+1eajm08,How can I automate manual data QA tasks?,"I'm a fresh uni graduate who just started as a QA automation engineer at a big MNC. While the job title is ""automation"" engineer in reality the job consists of producing input and expected output JSONs for regression tests, and for ""one-off"" scripts running the pipeline in a test environment and manually comparing columns in excel. We have an in-house testing framework that integrates nicely with our databricks jobs which means as QAs we don't touch any code. 
+
+The setup here is kind of weird. We deal with huge volumes of often complex data with transformations sometimes having 10-50 paths to take. The DEs only carry out integration tests and some unit tests on their pipelines but the focus is on getting to production ASAP hence the need for a dedicated QA team to do the manual busywork.
+
+I'm still very new to this space but I feel like there has to be some better way to do this. I don't want to automate myself out a job (lol) but I'm sure there's a way to make life easier here. 
+
+For instance an often tedious process (due to the lack of production data) is forming input JSONs for our tests. The data often consists of huge nested structures with complex schemas. I've played around with a few libraries designed for generating mock test data but they either 1) don't play nicely with spark schemas (the only schema and semi-""source of truth"" we have) or 2) don't support generation of nested JSON structures.
+
+I know someone who worked here in the past created a test data factory framework but it required you to create a schema yourself which doesn't really automate this process at all especially when faced with a new data source. Hence the only idea I really have is to make use of the spark schema to build a ""frame"" for your test data and autogenerate basic values for each datatype with the QA manually inputting key fields that require specific values. dbldatagen seemed like my best bet but it doesn't support nested spark schemas it seems. 
+
+I appreciate the context I've given is fairly vague but has anyone managed to automate parts of their manual data QA process given similar constraints, or have any advice or helpful libraries to use? I have experience with python and SWD so could be keen to make this myself but wondering if anything exists for this purpose already.
+
+Cheers",3,1,ada201,2024-07-23 21:26:29,https://www.reddit.com/r/dataengineering/comments/1eajm08/how_can_i_automate_manual_data_qa_tasks/,0,False,False,False,False,0,
+1eagrf4,Data Management internship / Data Analyst FTE,"Can someone please guide on the problem I am facing right now, It has been a major issue of my life on this decision
+
+I am a fresh graduate from computer science and I have experience of 6 months as a Data engineer intern where I was able to learn ELT standard (SF, dbt)
+
+And they didn't converted me to FTE there
+
+Now somehow through off-campus I am able crack interviews of Data Management role internship and Data analyst role which is FTE 
+
+And also I have got the offer letter for DM internship role and I am kinda confident that I will get the DA offer too soon
+
+I am totally depressed over this on what to choose, I am kind of passionate about Data Management role but also it's risky that it's 1 yr internship 
+
+And also I am scared to go for Analyst role, thinking will that be a future.
+
+Any help here would be great! You are saving a 22 yr old kid by all your opinions,
+
+Thanks a lot!",3,3,Excellent-Level-9626,2024-07-23 19:32:29,https://www.reddit.com/r/dataengineering/comments/1eagrf4/data_management_internship_data_analyst_fte/,0,False,False,False,False,0,
+1eaek41,Efficient ways to process 1M columns of pySpark dataframe,"Hi everyone, I am looking for some pointers on processing large pyspark dataframe efficiently.
+
+I have a pyspark dataframe as below:
+
+    +--------+-------------+---------+---------+---------+
+    |    code|    updatedAt|Sp223433|S1yd33333|S4r256467|
+    +--------+-------------+---------+---------+---------+
+    |AAAAAAAA|1713292448319|     3243|     null|     3422|
+    |BBBBBBBB|1689430451041|     3455|     2345|     7654|
+    
+
+Currently I have a custom function that works similar to spark 'melt' function and converts wide dataframe to long, drops the null values and explode the S-prefixed columns so I'll get result dataframe as below:
+
++--------+-------------+---------+  
+|    code   |    updatedAt  | Scols       |  
++--------+-------------+---------+  
+|AAAAAAAA|1713292448319| Sp223433|   
+|AAAAAAAA|1713292448319| S4r256467|  
+|BBBBBBBB|1689430451041| Sp223433|  
+|BBBBBBBB|1689430451041| S1yd33333|  
+|BBBBBBBB|1689430451041| S4r256467|
+
+Spark dataframe almost has 1M S-prefixed columns. My source data on which this transformation happens is of 2GB size. I have below config for my glue job:
+
+Glue version : 4  
+Worker Type : G8X  
+Number of workers: 12 , this gives me 96 DPUs. Also autoscaling is enabled.  
+
+
+But my job run takes \~27 hours and then errors out with :  
+ExecutorLostFailure: Reason: Executor heartbeat timed out after 641922 ms 
+
+Can someone please give me some pointers on how to process 1M columns efficiently and what am I doing wrong? I have been stuck with this for a while and would appreciate any help from the community. 
+
+  
+**Why not using COPY command solution to get data to Redshift:** The nature of our source data is messy, so unfortunately I cannot go for Redshift COPY command approach. For eg, in our source DDB data we have different prefixed attributes for a given PK. Ideally such prefixed attributes should come under one column when they are loaded into Redshift. It is not feasible to hardcode such attributes when defining redshift target table. Example based on below analogy: For DynamoDB 'teacher' table, for a given teacher A (PK), there are students S1, S2, S3,S4 etc (many of them). When this is loaded into Redshift table 'teacher\_student', for a given teacher code A, the student column should have S1, S2, S3, S4 as students (in normalized form). It's not possible to hard code S1, S2, S3, S4 as column names for target redshift.",3,2,BaseHumble,2024-07-23 18:03:30,https://www.reddit.com/r/dataengineering/comments/1eaek41/efficient_ways_to_process_1m_columns_of_pyspark/,0,False,False,False,False,0,
+1eao58x,Best Process for Managing and Storing Previous Yearly & Current Year Data ,"I assume this is the appropriate r/ to post but please feel free to remove or direct elsewhere if not...There was probably a better way to word the title but I know there's got to be a better process for storing some data than the way we're currently going about it.
+
+  
+The current structure is 2 tables - a table for current year's data and a table where we store the data after a full year is completed. The final step is a VIEW where current year and full year data is merged together. 
+
+at the end of a full year, the data in the current year table is essentially inserted into the full year table and the current year table begins the cycle over again. Data is transferred through a simple stored procedure on a yearly schedule.
+
+the full year table is never refreshed, only updated with new data. It remains static throughout the year and is great for YoY metrics. The current year table is updated monthly with a full refresh. 
+
+The dynamic of needing yearly data that isn't refreshed and the current year's data that does required a full refresh is why the two tables were created but I feel it just isn't the best technique. There are a few other scenarios that require a similar process and it just feels a bit clunky and unorganized. 
+
+I am not a data engineer so I wanted to get some input as to how you might approach or handle this scenario. TIA!",1,0,_Noln,2024-07-24 00:43:20,https://www.reddit.com/r/dataengineering/comments/1eao58x/best_process_for_managing_and_storing_previous/,0,False,False,False,False,0,
+1eajuq5,Looking for Some Broad Advice to OnBoard Data,"Pseudo-data engineer here looking for some advice on best practices. I've been building out a data lake using DataBricks' delta format - so far it's been pretty straight forward as I've been ingesting clearly delineated tables that are effectively standalone datasets. However, now I'm looking to onboard some new data comprised of loosely linked tables, and I'm not sure how best to proceed.
+
+The data format is generally:
+
+    {'full_run_meta_data': 'ids and dates',
+     'data_packet': [{'module_id': 'string',
+       'module_meta_data': 'ids and dates',
+       'diagnostic_info': {'diagnostic_data': 'outputs, user entries, etc.'}}]}
+
+The 'data\_packet' array can contain several tables per run. The table schemas are consistent from module\_id to module\_id, but each module has it's own distinct schema with specific fields. Something like:
+
+    {'source_id': 'abcd-efgh-zyxw',
+     'data_source_name': 'my_software_suite',
+     'data_type': 'randomly_generated_nonsense',
+     'ingested_on': '1776-08-02',
+     'instance_id': 'ghtiuh34h3uhfu34hfu34fh3u4ifhu3h4fiu34fuhi',
+     'data_packet': [{'module_name': 'mod_a',
+       'produced_at': 'datetime',
+       'diagnostic_info': {'field_a': 'string', 'field_b': 'etc'},
+       'outputs': {'outp_a': 343408238,
+        'output_b': 3423767,
+        'outp_c': 23985923589},
+       'app_name': 'app_a',
+       'app_id': 'blahblah'},
+      {'module_name': 'mod_b',
+       'produced_at': 'datetime',
+       'diagnostic_info': {'different_field': 23123235,
+        'another_field': 'datagoeshere',
+        'more_fields': 39123810981,
+        'last_field': 'just pointing out that these are all quite different from module to module'},
+       'outputs': {'outp_a': 5435939475903},
+       'app_name': 'app_a',
+       'app_id': 'blahblah'},
+      {'module_name': 'mod_a',
+       'produced_at': 'datetime',
+       'diagnostic_info': {'different_field': 44565,
+        'another_field': 'lorem',
+        'more_fields': 'ipsum',
+        'last_field': 'liksum'},
+       'outputs': {'outp_a': 325657, 'output_b': 8979797, 'outp_c': 6},
+       'app_name': 'app_b',
+       'app_id': 'mehmeh'}]}
+
+I appreciate that the example above is kind of silly. The point is, how do I integrate this with the existing data lake? Ideally I'd like all of this data to be in a single table to be queried together, i.e. so I could count all modules run over a time period. If I do this with the delta lake approach I've been using so far, this results in an arbitrarily wide table with every row containing a whole bunch of null data since I'm trying to accommodate every column that could possibly appear in the ""data\_packet"" field.
+
+Splitting each module into a separate distinct dataset is also a possibility, but that reduces the ability to be able to query the data as a whole set. Likewise, I could leave the ""diagnostic\_info"" as a json string within the table and massively cut down on the number of columns, but this compromises the potential for querying the data. 
+
+Any advice here is appreciated. I'm sure this is a solved problem, I just don't know the solution to it. Or I'm so deep in the weeds that I'm missing the bigger picture.",1,1,Alwaysragestillplay,2024-07-23 21:36:15,https://www.reddit.com/r/dataengineering/comments/1eajuq5/looking_for_some_broad_advice_to_onboard_data/,0,False,False,False,False,0,
+1eaghqv,Batch DE to Streaming DE?,"Ive been working for about 3 years with the classic modern data stack of snowflake, dbt and airflow. While I love dbt and messing around with airflow, there isn’t much to be done after a while. It’s not really that challenging tbh and I felt I have stopped learning. Im mostly now doing more data analysis work via sql since I have my infra so automated that I barely need to touch anything in airflow, aws or dbt. 
+
+I don’t like this data analysis work because I have to talk too much to business and I honestly don’t like them lol. Ive been thinking on moving to a role more of streaming. Seems more technical and more challenging. But don’t know where to start since ive never worked on streaming.
+
+Has anyone of you guys made the switch from a classic batch style de job to a streaming one? If so, any tips?",4,4,rudboi12,2024-07-23 19:21:38,https://www.reddit.com/r/dataengineering/comments/1eaghqv/batch_de_to_streaming_de/,0,False,False,False,False,0,
+1eag4s5,"Google Chrome ditching third party cookies completely, not anymore","Source : [Google Chrome Privacy Sandbox News](https://privacysandbox.com/intl/en_us/news/privacy-sandbox-update/)
+
+tl;dr: 
+
+* Google is not eliminating cookies entirely and as an alternative to protect privacy, introducing [IP protection](https://developers.google.com/privacy-sandbox/protections/ip-protection) built in chrome. 
+* To implement IP protection, they will route third-party traffic through two proxies - https://github.com/GoogleChrome/ip-protection#privacy-proxy
+* Google will run the first proxy and the 2nd proxy will be from an external CDN",1,0,ephemeral404,2024-07-23 19:07:08,https://www.reddit.com/r/dataengineering/comments/1eag4s5/google_chrome_ditching_third_party_cookies/,0,False,False,False,False,0,
+1eaflny,DataChain: prepare and curate data using local models and LLM calls,"Hi everyone! We are open sourcing DataChain today: [https://github.com/iterative/datachain](https://github.com/iterative/datachain)
+
+It helps curate unstructured data and extracte insights from raw files. For example, if you want to find images in your S3 folder where the number of people is between 1 and 5. Or find text files with dialogues where customers were unhappy about the service.
+
+With DataChain, you can retrieve files from a storage and use local ML models or LLM calls to answer these questions, save the result in an embedded database (SQLite) and and analyze them further. Btw.. the results can be full Python objects from LLM responses, thanks to proper serialization of Pydantic objects.
+
+Features:
+
+* runs code efficiently in parallel and out-of-memory, handling millions of files in a laptop
+* works with S3/GCS/Azure/local & versions datasets with help of DataVersion Control (DVC) - we are actually DVC team.
+* can executes vectorized operations in DB: similarity search for embeddings, sum, avg, etc.
+
+The tool is mostly design to prepare and curate data in offline/batch mode, not online. And mostly for AI engineers. But I'm sure some data engineers will find it helpful.
+
+Please take a look at the code examples in the repository. I'd love to hear feedback from data engineering folks!",1,0,dmpetrov,2024-07-23 18:46:05,https://www.reddit.com/r/dataengineering/comments/1eaflny/datachain_prepare_and_curate_data_using_local/,0,False,False,False,False,0,
+1eaezhj,"Question, Name of Data Model/Scheme that Starts with a Base then Tracks Mostly Changes?","Having a discussion with my team about a semi common data/table format. We're all calling it different things and curious if there is a formal name for it. The format typically starts with a base table of mostly static assets like streetlights and its characteristics (entry\_date, address, lat/long, height, pole\_color, bulb\_type, bulb\_status, bulb\_color, etc...). From there you just track any changes, like the pole\_color from grey to green on 7/23. Or bulb status from ""inactive"" to ""active"" 6/15. When people query the data they mostly want the latest status of any given record. The initial load is large, but the changes are minimal. The change log gives an ability to see changes over time.",1,1,braveNewWorldView,2024-07-23 18:21:03,https://www.reddit.com/r/dataengineering/comments/1eaezhj/question_name_of_data_modelscheme_that_starts/,0,False,False,False,False,0,
+1eacj7z,[Study Participants Needed] Share Your Thoughts on a Major Tech Product,"Hi Redditors!
+
+We at Amplinate ([https://amplinate.com/](https://amplinate.com/)) are looking for participants for a study we're conducting for a major tech company. Your input will help us understand user perspectives on one of their products.
+
+What's Involved:
+
+Phase 1: Complete a 15-minute online survey and receive an incentive.
+
+Phase 2: Some from Phase 1 will be invited to a 60-minute Zoom session and receive an additional incentive. Interviews will be in July 2024, scheduled in advance.
+
+Important Details:
+
+Privacy: We comply with GDPR. Your data is confidential and won't be shared with third parties. It's solely for recruiting participants for this and future research. ",1,1,UserInsightXpert,2024-07-23 16:41:53,https://www.reddit.com/r/dataengineering/comments/1eacj7z/study_participants_needed_share_your_thoughts_on/,0,False,False,False,False,0,
+1eaa9gm,Incremental load LH Microsoft Fabric,"I'm currently working for a client that asked me to create a lakehouse that would feed some power BI dashboards, used by their team.
+
+They have several databases with +100 tables. I was able to load their data into the LH through a pipeline but I AM having problems updating it/loading new data only. They want to run this every 30min but from what I see, Fabric only supports overwrite, not upsert. Any idea on how can I go around this? I checked ADF but couldn't find a way either and since the client uses a VNet, Fabric Notebooks are out of the equation as well (only pipelines and data flows)
+
+",1,4,ThatManRonnie,2024-07-23 15:11:22,https://www.reddit.com/r/dataengineering/comments/1eaa9gm/incremental_load_lh_microsoft_fabric/,0,False,False,False,False,0,
+1ea77j6,Introducing Airbyte Refreshes: Reimport Historical Data with Zero Downtime,,1,0,arimbr,2024-07-23 12:59:13,https://airbyte.com/blog/introducing-refreshes-reimport-historical-data-with-zero-downtime,0,False,False,False,False,0,
+1e9yw0r,How does Apache Spark read data from a kinesis stream when a timestamp is specified?,"For instance, if you set your readStream to read kinesis records from an hour ago, would it immediately grab all records from then until the current time, and store those in a data frame? or does it incrementally grab records?",1,0,ohoian,2024-07-23 04:26:18,https://www.reddit.com/r/dataengineering/comments/1e9yw0r/how_does_apache_spark_read_data_from_a_kinesis/,0,False,False,False,False,0,
+1eamkaj,What part of data engineering will die as part of improvementa in AI/ML,"What part of data engineering will get devalued and eventually die due to improvements in AI/ML and what all would become more valuable ?
+
+
+",1,7,Gloomy_Ad_4249,2024-07-23 23:31:27,https://www.reddit.com/r/dataengineering/comments/1eamkaj/what_part_of_data_engineering_will_die_as_part_of/,0,False,False,False,False,0,
+1eaj6j3,What is the availability of entry jobs for Databricks and what salary I can expect?,"I am in US.
+
+I have 5 years of experience in Data science in general (not big data). Python, Pandas, scikit, R, etc. Data pipelines, statistical analysis, report generation, lots of data cleaning.
+
+I have 1 year of experience of Azure. Azure - Understand quite well Entra ID and Networking. General usege of VMs, Containers (ACA), some others.
+
+Plan to learn Databricks in general and including PySpark.
+
+1. What is the availability of entry jobs for Databricks?
+2. What salary should I expect?",0,2,Alex_df_300,2024-07-23 21:09:19,https://www.reddit.com/r/dataengineering/comments/1eaj6j3/what_is_the_availability_of_entry_jobs_for/,0,False,False,False,False,0,
+1eaifk4,Is the Azure Databricks documentation good place to learn Databricks?,I what to learn Databricks platform. Is the Azure Databricks documentation good place to learn Databricks?,0,0,Alex_df_300,2024-07-23 20:38:59,https://www.reddit.com/r/dataengineering/comments/1eaifk4/is_the_azure_databricks_documentation_good_place/,0,False,False,False,False,0,
+1ealh5e,Am I a data analyst or data engineer?,"So I’ve been working at a Fortune 500 company for the past 4 years now and I’ve been considering asking for a title change to data engineer for more opportunities internally, but would love to hear your thoughts on if this is valid request or not. 
+
+Currently i am the only data lead on the small team of 20 that own and manage a very specific part of the company. I manage all of the data in and out of the team, including the creation and management of 10+ ETL’s from different API’s, SQL endpoints, warehousing of data, VM management, and additionally maintaining all tabular structure, querying, and reporting and data integrity.
+
+I’m fluent in python, SQL, R, and JS, and I’ve written all of the ETLs we use daily by hand and I’m regularly checking them to validate data integrity and flow into our warehouse, all of which is GCP or AWS based, keeping track of outages and potential hiccups in transfer.
+
+I spend about 70% of my time managing the data in the warehouse building queries and validating ETLs, and about 20% of my time reporting and dashboarding said data to various stakeholders through PowerBI and Tableau. The rest of the 10% I spend parsing through the tables to make sure there are no anomalies and data integrity remains strong through Ad-Hoc requests I get internally from team members. 
+
+Since you are all the experts, what does this sound like to you? I’m okay with either, I guess I’m more curious on what it would take for me to transition from Analyst to Engineer, if you feel like I fall within the Analyst category. Thanks for any advice!",1,12,gerbsta,2024-07-23 22:44:30,https://www.reddit.com/r/dataengineering/comments/1ealh5e/am_i_a_data_analyst_or_data_engineer/,0,False,False,False,False,0,
+1eacf4r,Run DBT 2x faster,,0,3,mirasume,2024-07-23 16:37:22,https://espresso.ai/post/dbt-acceleration,0,False,False,False,False,0,

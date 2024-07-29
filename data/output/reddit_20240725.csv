@@ -1,0 +1,202 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied,total_awards_received,likes
+1eaojmw,Netflix just open sourced their orchestrator Maestro,Here is their github repo as well: https://github.com/Netflix/maestro,217,20,on_the_mark_data,2024-07-24 01:02:23,https://netflixtechblog.com/maestro-netflixs-workflow-orchestrator-ee13a06f9c78,0,False,False,False,False,0,
+1eau2ge,"Inmon, Kimball & Data Vault","Could you guys share which DWH architecture is mostly used in your companies?
+
+From what I've seen most companies use Kimball, where they load load tables from different sources, denormalize them and put them in one big data mart so they don't have to deal with cross source data integration and they have the data ready for faster BI queires. I haven't yet heard of Inmon DWH architecture to be used in a company, because with normalized tables over different data marts you need to do many more joins which can be slow for BI and for data vaults they are complete mistery to me why would anyone use them.
+
+But I'm open for new insights.",48,35,leonidaSpartaFun,2024-07-24 06:03:46,https://www.reddit.com/r/dataengineering/comments/1eau2ge/inmon_kimball_data_vault/,0,False,False,False,False,0,
+1eapfck,I'm not a Data Engineer. Please help me decide on tools to use to build a simple data pipeline.,"I'm a Data Scientist that has just joined a small project after mostly working for pretty big companies in the past. I've been brought in to oversee everything data related for a small start-up that wants me to build an ML model using user data from their website. I need to build a simple pipeline to query data from our MySQL server, then run my python files for processing the data and training a model. I'm used to having a data engineer on my team to provide me with data and then using Databricks to add my steps for modelling. Now that I'm tasked with creating a pipeline from scratch with no budget I'm a little overwhelmed by all the tools out there. Doing a little research has led me to consider using Prefect or Dagster. I'm inclined to go for Prefect as it seems simpler to get started with but I don't want to simply use a worse tool due to just wanting less work for myself. My manager wants me to host the pipeline and model in a cPanel server that the company is already paying for in order to save money. Does anyone have any advice for tools I should consider for building a pipeline for this use-case? ",23,9,RastaSalad,2024-07-24 01:46:13,https://www.reddit.com/r/dataengineering/comments/1eapfck/im_not_a_data_engineer_please_help_me_decide_on/,0,False,False,False,False,0,
+1eb2474,Fabric Product Gaps Today vs. 12 mo ago,"Hi all, for folks that have used (or trialed Fabric recently), how do you think it has improved since going GA end of last year? I remember when it was in preview, our team had a demo of it, and it seemed to be good but had a long way to go still. 
+
+We are coming up for renewal with Databricks at the end of this year, so we have been thinking of giving it another go, but would be curious to learn about how folks are perceiving it today and if they have filled in some of the gaps as it relates to Git integrations, governance, automations with Dataflow gen2, etc. 
+
+  
+TLDR: We have been happy with Databricks and don't see a reason to move, but are a heavy Azure shop and some of our team likes the vision for Fabric and unifying some of our less technical team members into one tool and data lake. Seems like the product still has a ways to go, but how close is it? What are the gaps vs. Databricks today still? ",21,31,SaasMan87,2024-07-24 13:56:35,https://www.reddit.com/r/dataengineering/comments/1eb2474/fabric_product_gaps_today_vs_12_mo_ago/,0,False,False,False,False,0,
+1eazkjv,Alternative for notebooks based cloud products for big ETL project ,"I am building a migration tool for customers that want to change platfotms. Think of it as 5000 lines of code that contains: API scripts, medallion architecture for transformations with many validation steps, and even more API script for the target platform.
+
+I started this project using Microsoft Fabric, but after a while switched to just writing this locally with regular python files (which made it possible to make extensive use of classes and relative imports,...). Coming from notebooks in fabric I can now not imagine running this big project through notebooks, now having used all the imports between files and classes,...
+
+Writing the code locally made the development be way more flexible and just faster because I can use vscode instead of notebooks inside a browser.
+
+My boss however likes the cloud better. I don't, but I am interested in good alternatives for future projects that might neet to run continuously (in the cloud). What tools could I use to write and run a regular python project with the benefits of using the cloud?
+Preferably with editing is vscose as if it was a local project",11,6,Aggravating_Coast430,2024-07-24 11:54:58,https://www.reddit.com/r/dataengineering/comments/1eazkjv/alternative_for_notebooks_based_cloud_products/,0,False,False,False,False,0,
+1eaxdof,Can anyone recommend cost-effective real-time ETL tools?,"I am on the hunt for budget-friendly ETL tools that can efficiently handle real time data processing. Curious to see some good tools recommendations from the community. What tools have you had success with that balance affordability and functionality? Any insights or personal experience would be greatly appreciated!
+
+Thanks",11,13,Livid_Ear_3693,2024-07-24 09:45:26,https://www.reddit.com/r/dataengineering/comments/1eaxdof/can_anyone_recommend_costeffective_realtime_etl/,0,False,False,False,False,0,
+1eatuka,Should I start learning from Apache Spark or Databricks if I want to learn both?,I am interested in learning Apache Spark and Databricks. Which one I should learn first?,10,5,Alex_df_300,2024-07-24 05:49:24,https://www.reddit.com/r/dataengineering/comments/1eatuka/should_i_start_learning_from_apache_spark_or/,0,False,False,False,False,0,
+1eb2ezw,Built some visualizations for (mostly Fivetran) data sources,,10,3,Willing-Site-8137,2024-07-24 14:09:45,https://i.redd.it/jhkmp6di4hed1.png,1,False,False,False,False,0,
+1eatqdu,How companies approach prediction tasks,,8,0,sbalnojan,2024-07-24 05:41:44,https://i.redd.it/oh3wuh2gmeed1.jpeg,0,False,False,False,False,0,
+1ebax0m,Data Engineering Solutions: Discovering What Your Stakeholders Truly Need,,6,1,ivanovyordan,2024-07-24 19:56:14,https://datagibberish.com/p/data-engineering-solutions-discovering,0,False,False,False,False,0,
+1eb1yl8,Guidance ,"Hello Everyone 
+I just started my career as a Data Engineer (21 M) 
+I am currently working in one of the big Pharma Company. 
+What should I do to get solid skills in Data Engineering .I also want to deep dive into everything and very excited to know the internal working and architecture. 
+Currently we mostly use pyspark and aws .I don’t have much idea about them . 
+Or should I change my domain from Data Engineering to other as I heard from many people that Data Engineering wouldn’t be having good scope in the future. 
+
+Thanks for helping !!!",5,12,naren_2303,2024-07-24 13:49:39,https://www.reddit.com/r/dataengineering/comments/1eb1yl8/guidance/,0,False,False,False,False,0,
+1eamkaj,What part of data engineering will die as part of improvementa in AI/ML,"What part of data engineering will get devalued and eventually die due to improvements in AI/ML and what all would become more valuable ?
+
+
+",4,20,Gloomy_Ad_4249,2024-07-23 23:31:27,https://www.reddit.com/r/dataengineering/comments/1eamkaj/what_part_of_data_engineering_will_die_as_part_of/,0,False,False,False,False,0,
+1ebbx7o,Is it just me or did the jobs in DE start to dry up?,Title. Job searching atm and noticed what seems like a big drop off in the number of DE/DS jobs in general. ,11,12,AppleAreUnderRated,2024-07-24 20:37:20,https://www.reddit.com/r/dataengineering/comments/1ebbx7o/is_it_just_me_or_did_the_jobs_in_de_start_to_dry/,0,False,False,False,False,0,
+1eb653r,How are you organizing your Airflow’s DAG?,"Hello everyone,
+
+We will start using Airflow in my company and we have some problems regarding the best way to organize DAGs, and how we should deploy them. 
+
+1. We will be deploying Airflow on a cluster, with one master and two workers node : is it better to install airflow from scratch (on all nodes) or directly using Airflow docker image ? 
+2. Is it a good practice to centralize all our pipelines, deriving from numerous projects, on the same cluster ? Means that we will display and monitor all pipelines in the same server
+
+Thank you in advance for your answers and advices :) ",7,4,Ryadok,2024-07-24 16:43:39,https://www.reddit.com/r/dataengineering/comments/1eb653r/how_are_you_organizing_your_airflows_dag/,1,False,False,False,False,0,
+1eb4rgp,Practical Data Engineering using AWS Cloud Technologies,"Written a guest blog on how to build an end to end aws cloud native workflow. I do think AWS can do lot for you but with modern tooling we usually pick the shiny ones, a good example is Airflow over Step Functions (exceptions applied).
+
+
+
+Give a read below: [https://vutr.substack.com/p/practical-data-engineering-using?r=cqjft&utm\_campaign=post&utm\_medium=web&triedRedirect=true](https://vutr.substack.com/p/practical-data-engineering-using?r=cqjft&utm_campaign=post&utm_medium=web&triedRedirect=true)
+
+
+
+Let me know your thoughts in the comments.",5,6,mjfnd,2024-07-24 15:47:03,https://www.reddit.com/r/dataengineering/comments/1eb4rgp/practical_data_engineering_using_aws_cloud/,1,False,False,False,False,0,
+1eaxt0e,Recommendations on data engineering tools integrated with online code editors?,"Hi there, I am looking for data engineering tools that are integrated with code editors such like jupyter notebook or something else. Any recommendations?",4,3,cysin,2024-07-24 10:12:13,https://www.reddit.com/r/dataengineering/comments/1eaxt0e/recommendations_on_data_engineering_tools/,1,False,False,False,False,0,
+1earyr4,Best way to append monthly IDs to a table with DBT,"Hey Yall,
+
+  
+I'm new to DBT and need to build out a ledger table that appends all of the new ids on a monthly basis. Essentially i just want the id and the timestamp from the end of the month associated. What DBT feature will do this best? I know snapshots can handle a lot of cdc logic, but that might be overkill for my needs. Could I just create a snapshot of every month and then append all the tables into a single table to reference? Seems like theres a simpler way to do this with an insert instead.
+
+  
+Thanks!",4,3,biga410,2024-07-24 03:56:54,https://www.reddit.com/r/dataengineering/comments/1earyr4/best_way_to_append_monthly_ids_to_a_table_with_dbt/,1,False,False,False,False,0,
+1eb3syo,"Recommendations for Open Source Data Warehousing Solutions Compatible with Flink, Spark, and dbt","Hi everyone,
+
+I'm currently exploring open source data warehousing solutions that are actively used and provide good compatibility with other open source tools like Flink, Spark, and dbt. I'm looking for recommendations on which ones offer the best performance and integration capabilities.
+
+Specifically, I'm not interested in cloud-based solutions like BigQuery or Snowflake. Instead, I want to focus on open source alternatives that can be self-hosted or used on-premise.
+
+Any insights or experiences you can share would be greatly appreciated.
+
+Thanks!""",3,3,PrimaryConsistent262,2024-07-24 15:07:53,https://www.reddit.com/r/dataengineering/comments/1eb3syo/recommendations_for_open_source_data_warehousing/,0,False,False,False,False,0,
+1eb2aum,Splink 4: Fast and scalable deduplication (fuzzy matching) in Python,,3,1,RobinL,2024-07-24 14:04:32,https://moj-analytical-services.github.io/splink/blog/2024/07/24/splink-400-released.html,0,False,False,False,False,0,
+1eb19us,Is this SQL cheat sheet correct? Source from DataCamp.,"In row 2, the artist\_id is 1, but the name is Aerosmith. Why is this?
+
+https://preview.redd.it/tqpw0403wged1.png?width=780&format=png&auto=webp&s=9b07c36e3c959c380096d6ab3a226cb77ae6e193
+
+https://preview.redd.it/v3in1xi3wged1.png?width=1268&format=png&auto=webp&s=6b0281f50dc8882b3eaf1b8068aacf3bf74f8772
+
+",4,9,No_Consideration1071,2024-07-24 13:18:27,https://www.reddit.com/r/dataengineering/comments/1eb19us/is_this_sql_cheat_sheet_correct_source_from/,0,False,False,False,False,0,
+1eayyhu,Best ETLoption for Swoogo (Oauth API) to Google Big Query,"Hi everyone,
+
+Fair new to data engineering, (I am head of technology but steer away from the data eng side) trying to do some groundwork to help assist our data engineer because we are hitting brick walls.
+
+We are trying to find a good, budget friendly ETL provider to move data from Swoogo (Oauth API) into Googl e Big Query.
+
+We have looked at numerous providers already and it's no go or certainly not plain sailing.
+
+Any help greatly appreciated.",3,0,Capable_Working_2054,2024-07-24 11:20:27,https://www.reddit.com/r/dataengineering/comments/1eayyhu/best_etloption_for_swoogo_oauth_api_to_google_big/,1,False,False,False,False,0,
+1eayna3,Databricks Importing Modules/Classes,"We write all our functionality in classes and modules within Databricks notebooks. I’m not sure if I’m imagining this but I find importing these using %run starts to take a considerable amount of time relative to the execution of the notebook. 
+
+Have other people experienced this? I am tossing up between publishing python wheels and importing them to see if this solves the issue.",3,2,Agitated-Western1788,2024-07-24 11:02:44,https://www.reddit.com/r/dataengineering/comments/1eayna3/databricks_importing_modulesclasses/,1,False,False,False,False,0,
+1eaxtl3,"Generate large XML files from data in our Data Lake (Databricks). I need help with step by step understanding, and what info i miss to make this work. Thanks in advance!","Hi all!
+
+I have been asked the following very vague question:  
+***""There is data available in our data lake. Please come up with an idea/plan how to generate XML files from this data. The XML files need to be compliant to the specifications of format XXXX.""*** 
+
+This is something new to me but i really love to explore how things work. I have been watching video's and learning about everything but it is all just a bit much for me from scratch. I'm not a data person (yet.. maybe), just a DevOps engineer. So i would love to have some input from you guys. Think about:  
+- What steps do i need to consider?  
+- What questions do i need to ask to gain the right information to make a plan?  
+- Any tips pointing in the right direction or general info is very welcome.  
+  
+**I have the following information:**  
+- The data is stored in Azure blob storage in the data warehouse (Databricks data lake).  
+- The data is in parquet files in the cloud file storage.  
+- The data is stored in delta tables, which can be accessed through SQL via Databricks.  
+- All data that is necessary for generating the XML's is available in this source.
+
+Someone came to me with the following idea: ***""I think it's best to make a notebook in Databricks that can convert the delta tables to XML.""***  
+Is this the way to go? If so, could you simplify the steps you would take to execute this? Then i will study the details myself. 
+
+Thank you so much!",3,4,Confident_Search8516,2024-07-24 10:13:13,https://www.reddit.com/r/dataengineering/comments/1eaxtl3/generate_large_xml_files_from_data_in_our_data/,1,False,False,False,False,0,
+1eawyh2,How could working as a manufacturing process technician and being an industrial engineer affect or benefit from changing branches towards something more programming with the objectives of looking at the field of AI?,"The thing is like this, I would like to venture into artificial intelligence, that is, learning programming languages ​​is essential for this, I know. But it is worth mentioning that I am 27 years old, with experience in the automotive industry as a manufacturing and process technician, I am an industrial engineer but I currently work as a technician, I have five years of experience. I don't know how much it could benefit me or how to change branches if so, I was thinking about learning Python and SQL, in fact I took up mathematics to have a good development in this programming and go on a path in artificial intelligence. My question is: what positions could I occupy in the future and if having a degree in industrial engineering would help to have a continuous career or would it change the field a lot?",3,2,Practical-Artist2084,2024-07-24 09:17:32,https://www.reddit.com/r/dataengineering/comments/1eawyh2/how_could_working_as_a_manufacturing_process/,0,False,False,False,False,0,
+1ebert5,Deriving insights from data,"As a data engineer I deal with a lot of data, but most of my work is based on client requirements. I want to eventually come to a point where I can derive value from the data I'm given. How do I start with this, are there any resources that might help?",2,3,aprilia457,2024-07-24 22:37:04,https://www.reddit.com/r/dataengineering/comments/1ebert5/deriving_insights_from_data/,1,False,False,False,False,0,
+1ebe6j5,"I accepted the entry level position, last question for awhile (hopefully)","Hello everyone
+
+I just wanted to start with a thank you - this sub has been invaluable for me over the last six months
+
+I posted the other day about whether or not $50k was a fair entry-level salary for someone with zero formal DE experience. The responses were overwhelmingly 'yes'. I went in yesterday to meet their teams and they offered me the position today via email. (I deleted the post due to sensitive info)
+
+I'll start manually cleaning CSV files all day, but they plan to completely transition to Azure by 2Q25, with no remaining manual data cleaning work. The transition has been underway for a few months now, so it's happening.
+
+This represents a huge opportunity, as they envision my role being able to take multiple paths, but I didn't ask specifics yet.
+
+I believe they hired a remote cloud engineer to migrate them to Azure, so I'm wondering if this means it's temporary, and they'll want someone to manage it moving forward.
+
+I bought the DE book with a bird on it and I have the CompTIA Network+ book. I haven't read more than a few pages in each, as I elected to throw together a project instead.
+
+I basically wanted to make one more post asking for help and ask for tips on what to look out for, what to be sure to learn (besides SQL and Python), etc.
+
+Any tips to prepare or focus on over the next 1-2 years would be appreciated. I just don't want to get 6-12 months in and have someone say ""well you should've been doing this dummy"".
+
+Thanks in advance",3,2,pm_me_data_wisdom,2024-07-24 22:09:43,https://www.reddit.com/r/dataengineering/comments/1ebe6j5/i_accepted_the_entry_level_position_last_question/,1,False,False,False,False,0,
+1eb99js,What are some alternative of Singlestore?,"Hi Guys,
+
+What are alternatives to Singlestore where the SQL syntax is more similar to MySQL or compatible with Mysql queries like Singlestore?
+
+Our usecase is to fetch data from multiple CRM and store it in the Database for analytic purposes. Kindly let me know of good alternatives. The issue with Singlestore is that it's expensive and also we have faced issues with Singlestore multiple times regarding memory usage suddenly spiking and their team not being able to explain it. 
+
+We were looking at Clickhouse but it says JSON support is experimental Also we will be doing an upsert on the data that we fetch daily (basically fetching anything that got updated in the past 1 day) but the Primary key in Clickhouse is kind of different than other databases. 
+
+I am new to Data engineering and worked as a BE developer previously so I am new to this world. ",2,0,Specialist_Bird9619,2024-07-24 18:49:22,https://www.reddit.com/r/dataengineering/comments/1eb99js/what_are_some_alternative_of_singlestore/,0,False,False,False,False,0,
+1eb5stb,AWS Zero ETL - Does it only capture future data?,"Hi all,
+
+I need to come up with an approach for an analytical db. my to options are:
+
+1.  Plug a Zero ETL integration onto our **existent** RDS instance into Redshift
+2. Create Pipelines using Glue into Redshift as well
+
+  
+As I was  doing my research I noticed Zero ETL is based on CDC (change data capture) so:
+
+* What happens with existent data that has/will not change in the future, does it actually backfills all no matter what?
+* Do we have to restart the RDS instance in order to plug in the ZETL integration?
+
+  
+Thank you in advanced",2,2,wichotl,2024-07-24 16:29:42,https://www.reddit.com/r/dataengineering/comments/1eb5stb/aws_zero_etl_does_it_only_capture_future_data/,0,False,False,False,False,0,
+1eb2gjt,Customer segmentation and RFM analysis. ,"https://medium.com/@rahulbharadwaaj15/customer-clustering-for-enhanced-marketing-strategies-in-retail-8bf1e813b68c
+
+Check out my new medium article 
+
+#Dataanalysis #datascience #RFM
+",2,1,Ok_Reference3613,2024-07-24 14:11:31,https://www.reddit.com/r/dataengineering/comments/1eb2gjt/customer_segmentation_and_rfm_analysis/,1,False,False,False,False,0,
+1eav5cb,does Dask_sql has a function that is same as sparksql.Row?,"I have a large dataset to work. dask dataframe seems much faster. The old code use sparksql.Row to reach each row data and process the whole dataset.
+
+  
+I have not found sdask\_sql.Row.  not sure whether there is another way to achieve it.",2,0,Independent_Algae358,2024-07-24 07:14:20,https://www.reddit.com/r/dataengineering/comments/1eav5cb/does_dask_sql_has_a_function_that_is_same_as/,1,False,False,False,False,0,
+1eao58x,Best Process for Managing and Storing Previous Yearly & Current Year Data ,"I assume this is the appropriate r/ to post but please feel free to remove or direct elsewhere if not...There was probably a better way to word the title but I know there's got to be a better process for storing some data than the way we're currently going about it.
+
+  
+The current structure is 2 tables - a table for current year's data and a table where we store the data after a full year is completed. The final step is a VIEW where current year and full year data is merged together. 
+
+at the end of a full year, the data in the current year table is essentially inserted into the full year table and the current year table begins the cycle over again. Data is transferred through a simple stored procedure on a yearly schedule.
+
+the full year table is never refreshed, only updated with new data. It remains static throughout the year and is great for YoY metrics. The current year table is updated monthly with a full refresh. 
+
+The dynamic of needing yearly data that isn't refreshed and the current year's data that does required a full refresh is why the two tables were created but I feel it just isn't the best technique. There are a few other scenarios that require a similar process and it just feels a bit clunky and unorganized. 
+
+I am not a data engineer so I wanted to get some input as to how you might approach or handle this scenario. TIA!",2,6,_Noln,2024-07-24 00:43:20,https://www.reddit.com/r/dataengineering/comments/1eao58x/best_process_for_managing_and_storing_previous/,0,False,False,False,False,0,
+1ebdwgj,Project ideas,Any recommendations for projects or ideas where i can blend backend engineering and data engineering. To showcase my skills. ,1,0,sepiolGoddess,2024-07-24 21:57:57,https://www.reddit.com/r/dataengineering/comments/1ebdwgj/project_ideas/,1,False,False,False,False,0,
+1eb25yp,building a Data Analytics platform,"Hey fellows, I'm building a Data Analytics platform, i have built a website, and I wanted to make a bi dashboard that enable users to make their own reports based on the scheme and data model i have built in the backend I searched almost all available options , but As I'm starting The business the cost is a huge concern to me, for example looker Free plan is only to show The report only The viewer can't even use filters or apply their own , to upgrade to The paid plan The doc's Said it's 9$ per user so the cost will be pretty high for me, although other Open Source alternative doesn't support This feature, any One have a suggestion on 
+What should I use in order to get what i want in some reasonable cost ??
+",1,3,Horror-Bit572,2024-07-24 13:58:48,https://www.reddit.com/r/dataengineering/comments/1eb25yp/building_a_data_analytics_platform/,0,False,False,False,False,0,
+1eb29kt,MSFT Fabric vs. Databricks Today (versus 6 mo ago),"In conjunction with my post here: [https://www.reddit.com/r/dataengineering/comments/1eb2474/fabric\_product\_gaps\_today\_vs\_12\_mo\_ago/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/dataengineering/comments/1eb2474/fabric_product_gaps_today_vs_12_mo_ago/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+&#x200B;
+
+For folks that have used (or trialed Fabric recently), how much better is it than it was 6 mo ago when first going GA? Is it at parity with Databricks, close but still has important feature gaps, or nowhere close?
+
+[View Poll](https://www.reddit.com/poll/1eb29kt)",0,3,SaasMan87,2024-07-24 14:03:00,https://www.reddit.com/r/dataengineering/comments/1eb29kt/msft_fabric_vs_databricks_today_versus_6_mo_ago/,0,False,False,False,False,0,
+1eaolr5,Data Community,"Hi data engineers,
+
+I'm looking for advice on how to enhance the management of our data community in the Philippines to better engage our members and support their career growth at various stages. We've already implemented several initiatives like workshops, mentorship programs, and knowledge sharing, but we're keen to improve further. What would you like to have in a data engineering community? Any insights on fostering member engagement, facilitating meaningful interactions, and ensuring long-term sustainability would be greatly appreciated.
+
+Thanks in advance for your help!
+
+For reference: https://dataengineering.ph/
+Statistics: https://docs.google.com/presentation/d/1Y3FKMzeF61nMy3um1EmOULIXzlZn0_yartVhzL4_yoE/edit?usp=drivesdk",0,1,saintmichel,2024-07-24 01:05:17,https://www.reddit.com/r/dataengineering/comments/1eaolr5/data_community/,0,False,False,False,False,0,

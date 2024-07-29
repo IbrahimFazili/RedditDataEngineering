@@ -8,6 +8,7 @@ import sys
 # need this to be above the pipeline import
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from pipelines.aws_s3_pipeline import upload_s3_pipeline
 from pipelines.reddit_pipeline import reddit_pipeline
 
 
@@ -41,3 +42,12 @@ extract = PythonOperator(
 
 
 # upload to S3
+upload_s3 = PythonOperator(
+    task_id = 'upload_s3',
+    python_callable=upload_s3_pipeline,
+    dag=dag
+)
+
+
+# basically passes the connection from one operator to another
+extract >> upload_s3

@@ -1,0 +1,29 @@
+[2024-07-24T03:32:14.478+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509
+[2024-07-24T03:32:14.479+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3'
+[2024-07-24T03:32:14.501+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509
+[2024-07-24T03:32:14.502+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3'
+[2024-07-24T03:32:14.532+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.upload_s3 scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T03:32:14.541+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.upload_s3 scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T03:32:14.542+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-07-24T03:32:14.552+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): upload_s3> on 2024-07-23 00:00:00+00:00
+[2024-07-24T03:32:14.560+0000] {standard_task_runner.py:57} INFO - Started process 61 to run task
+[2024-07-24T03:32:14.563+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'upload_s3', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp68ugize4']
+[2024-07-24T03:32:14.566+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask upload_s3
+[2024-07-24T03:32:14.607+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509
+[2024-07-24T03:32:14.608+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3 permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=etl_reddit_pipeline/run_id=scheduled__2024-07-23T00:00:00+00:00/task_id=upload_s3'
+[2024-07-24T03:32:14.609+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.upload_s3 scheduled__2024-07-23T00:00:00+00:00 [running]> on host a3b014fcf0aa
+[2024-07-24T03:32:14.671+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ibrahim Fazili' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='upload_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T03:32:15.163+0000] {logging_mixin.py:151} INFO - Bucket already exists:  if-reddit-engineering
+[2024-07-24T03:32:15.164+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 14, in upload_s3_pipeline
+    upload_to_s3(s3, file_path, AWS_BUCKET_NAME, file_path.split('/')[-1])
+AttributeError: 'NoneType' object has no attribute 'split'
+[2024-07-24T03:32:15.182+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_reddit_pipeline, task_id=upload_s3, execution_date=20240723T000000, start_date=20240724T033214, end_date=20240724T033215
+[2024-07-24T03:32:15.199+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 3 for task upload_s3 ('NoneType' object has no attribute 'split'; 61)
+[2024-07-24T03:32:15.257+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-07-24T03:32:15.279+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
